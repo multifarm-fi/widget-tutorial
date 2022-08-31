@@ -9,7 +9,6 @@ export default function App() {
   return (
       <div style={{backgroundImage: GRADIENT, padding: '100px'}}>
           <MultifarmProvider
-              style={{backgroundImage: GRADIENT}}
               token={process.env.REACT_APP_TOKEN}
               theme="maia"
               key="maia"
