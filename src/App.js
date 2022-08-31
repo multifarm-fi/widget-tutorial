@@ -7,7 +7,7 @@ const GRADIENT = 'linear-gradient(197.3deg, #072154 0%, #345FB0 22.92%, #9B74D1 
 export default function App() {
 
   return (
-      <div style={{backgroundImage: GRADIENT}}>
+      <div style={{backgroundImage: GRADIENT, padding: '100px'}}>
           <MultifarmProvider
               style={{backgroundImage: GRADIENT}}
               token={process.env.REACT_APP_TOKEN}
