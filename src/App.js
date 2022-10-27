@@ -1,22 +1,19 @@
-
-import { MultifarmProvider, Dashboard } from '@multifarm/widget'
-import '@multifarm/widget/dist/maia.css'
-
-const GRADIENT = 'linear-gradient(197.3deg, #072154 0%, #345FB0 22.92%, #9B74D1 48.96%, #B67ADA 64.69%, #8A62BC 82.29%, #453B8D 100%)'
+import {
+  MultifarmProvider,
+  RedactedDashboard,
+} from '@multifarm/widget/dist/redacted';
 
 export default function App() {
-
   return (
-      <div style={{backgroundImage: GRADIENT, padding: '100px'}}>
-          <MultifarmProvider
-              token={process.env.REACT_APP_TOKEN}
-              theme="maia"
-              key="maia"
-              provider="maia"
-              themeColors="dark"
-          >
-              <Dashboard />
-          </MultifarmProvider>
-      </div>
-    )
+    <div style={{ background: '#040308', padding: '100px' }}>
+      <MultifarmProvider
+        token={process.env.REACT_APP_TOKEN}
+        theme="redacted"
+        provider="redacted"
+        themeColors="dark"
+      >
+        <RedactedDashboard />
+      </MultifarmProvider>
+    </div>
+  );
 }
